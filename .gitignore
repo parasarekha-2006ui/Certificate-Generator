@@ -1,0 +1,37 @@
+# Environment & Credentials (NEVER commit secrets)
+.env
+backend/.env
+*.env
+
+# Python Virtual Environment & Bytecode
+backend/venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Node.js & Frontend Build Outputs
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+.eslintcache
+
+# Generated Certificates & Archives (leave directories intact with .gitkeep)
+backend/generated_certificates/*.pdf
+backend/generated_certificates/*.zip
+backend/generated_certificates/*.png
+!backend/generated_certificates/.gitkeep
+
+# Uploaded Files
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# IDEs & OS Metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
